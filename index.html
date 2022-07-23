@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <title>D3 Teknik Informatika</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/amikom.png" type="image/x-icon" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+      integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- boot -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- lightslider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css"
+      integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"
+      integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbarHome fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/amikom.png" alt="Ikon amikom" />
+          <h1>D3<br />Teknik Informatika</h1>
+        </a>
+
+        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item active">
+              <a href="#" class="nav-link dropdown-toggle" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profil</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                <a class="dropdown-item" href="pages/sejarah.html">Sejarah</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/visimisi.html">Visi & Misi</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/deskripsi.html">Deskripsi Prodi</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/kompetensi.html">Kompetensi Lulusan</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/kontak.html">Kontak Prodi</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/pengelola.html">Pengelola Prodi</a>
+              </div>
+            </li>
+
+            <li class="nav-item active">
+              <a href="#" class="nav-link dropdown-toggle" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Konsentrasi</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                <a class="dropdown-item" href="pages/webdev.html">Web Development</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/animation.html">Animation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/network.html">Networking</a>
+              </div>
+            </li>
+
+            <li class="nav-item active">
+              <a href="#" class="nav-link dropdown-toggle" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Akademik</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                <a class="dropdown-item" href="pages/kalender.html">Kalender Akademik</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/kurikulum.html">Kurikulum</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/panduan.html">Buku Panduan</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/simulasinilai.html">Simulasi Nilai</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://drive.google.com/file/d/1_qo0fl3gotyOKJEGvQOU4nXun2s0AB5A/view">Panduan Pembayaran</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/krs.html">KRS</a>
+              </div>
+            </li>
+
+            <li class="nav-item active">
+              <a href="#" class="nav-link dropdown-toggle" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Program</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                <a class="dropdown-item" href="pages/mreguler.html">Magang Reguler</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/mbkm.html">Magang MBKM</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/tnreguler.html">TA Non Reguler</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/treguler.html">TA Reguler</a>
+              </div>
+            </li>
+
+            <li class="nav-item active">
+              <a href="#" class="nav-link dropdown-toggle" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RPS</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                <a class="dropdown-item" href="pages/semester1.html">Semester 1</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/semester2.html">Semester 2</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/semester3.html">Semester 3</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/semester4.html">Semester 4</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="pages/semester5.html">Semester 5</a>
+              </div>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="pages/prestasi.html">Prestasi D3TI</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul id="autoWidth" class="cs-hidden">
+      <li class="item-a">
+        <section class="slideshow">
+          <img class="satu" src="images/banner-shd.png" alt="Team Work" />
+          <div class="shadow"></div>
+          <div class="container">
+            <div class="mainText">
+              <div class="garis"></div>
+              <h3>Our View</h3>
+              <h1>Campus Building</h1>
+            </div>
+          </div>
+        </section>
+      </li>
+
+      <li class="item-b">
+        <section class="slideshow">
+          <img class="dua" src="images/banner-shd.png" alt="Team Work" />
+          <div class="shadow"></div>
+          <div class="container">
+            <div class="mainText">
+              <div class="garis"></div>
+              <h3>Our View</h3>
+              <h1>Laboratory Room</h1>
+            </div>
+          </div>
+        </section>
+      </li>
+
+      <li class="item-c">
+        <section class="slideshow">
+          <img class="tiga" src="images/banner-shd.png" alt="Team Work" />
+          <div class="shadow"></div>
+          <div class="container">
+            <div class="mainText">
+              <div class="garis"></div>
+              <h3>Our Values</h3>
+              <h1>teamwork</h1>
+            </div>
+          </div>
+        </section>
+      </li>
+
+      <li class="item-d">
+        <section class="slideshow">
+          <img class="empat" src="images/banner-shd.png" alt="Team Work" />
+          <div class="shadow"></div>
+          <div class="container">
+            <div class="mainText">
+              <div class="garis"></div>
+              <h3>Our Values</h3>
+              <h1>E-SPORT ACHIEVEMENT</h1>
+            </div>
+          </div>
+        </section>
+      </li>
+    </ul>
+
+    <div class="sambutan">
+      <h1>Kepala Prodi</h1>
+      <h1>D3 Teknik Informatika</h1>
+    </div>
+
+    <div class="kaprodi">
+      <div class="container">
+        <img src="images/pak barka.jpg" alt="Ketua Rektor D3 Teknik Informatika" />
+
+        <div class="visiMisi">
+          <div class="visi">
+            <h5>Vision</h5>
+            <h3>Nurturing Leaders for God, Country and Community</h3>
+          </div>
+
+          <div class="misi">
+            <h5>Mission</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet cum id reiciendis laudantium esse fuga quo ullam possimus illum eum, quibusdam officiis perspiciatis aperiam sed sapiente incidunt sit veritatis fugiat quisquam
+              eius odit. Iste sunt eius quos, earum harum cumque, quia quo, ipsam iusto enim inventore cupiditate nesciunt quisquam dolore!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- pmb -->
+    <div class="pmb">
+      <div class="container">
+        <div class="row justify-content-around">
+          <div class="isi col-4">
+            <h2 class="text-white font-weight-bold">Informasi Penerimaan Mahasiswa Baru Universitas AMIKOM Yogyakarta</h2>
+            <p class="text-white">Universitas AMIKOM Yogyakarta merupakan salah satu perguruan tinggi yang berkonsentrasi pada bidang industri teknologi kreatif menghasilkan lulusan dengan daya saing pasar internasional.</p>
+            <div class="info-pmb">
+              <a class="text-decoration-none" href="https://pmb.amikom.ac.id" target="_blank">
+                <i class="fas fa-fw fa-book-reader text-white"></i>
+                <span class="text-white">Info PMB</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-4">
+            <img class="img-fluid" src="images/pmb-banner.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jurusan -->
+    <div class="jurusan">
+      <div class="container">
+        <h2>Konsentrasi</h2>
+        <h2>D3 Teknik Informatika</h2>
+
+        <div class="boxJurusan">
+          <div class="perBox">
+            <img src="images/1.jpg" alt="Web Development" />
+            <h3>Web Development</h3>
+          </div>
+
+          <div class="perBox">
+            <img src="images/animation.jpg" alt="Animation" />
+            <h3>Animation</h3>
+          </div>
+
+          <div class="perBox">
+            <img src="images/networking.jpg" alt="Networking" />
+            <h3>Networking</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sosmed icon -->
+    <div class="iconBox">
+      <a href="https://wa.me/6285253444999" class="perIconBox wa">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <a href="https://www.facebook.com/amikomjogja" class="perIconBox fb">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a href="https://www.instagram.com/amikomjogja" class="perIconBox ig">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://www.youtube.com/c/amikomjogjavideo" class="perIconBox yt">
+        <i class="fab fa-youtube"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/school/universitasamikomyogyakarta/" class="perIconBox linkin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4 class="my-4 text-white text-center">Contact Us</h4>
+
+            <div class="footerContactUs">
+              <div class="perFooterContactUs">
+                <i class="fas text-white fa-envelope"></i>
+                <p class="text-white">amikom@amikom.ac.id</p>
+              </div>
+
+              <div class="perFooterContactUs">
+                <i class="fas text-white fa-phone-alt"></i>
+                <p class="text-white">(0274) 884201 - 207</p>
+              </div>
+
+              <div class="perFooterContactUs">
+                <i class="fas text-white fa-road"></i>
+                <p class="text-white">Jl. Ring Road Utara, Condong Catur, Sleman, Yogyakarta, 55283</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <h4 class="my-4 text-center text-white">Akademik</h4>
+            <div class="footerAbout">
+              <a href="https://pmb.amikom.ac.id/daftar#!/" class="text-white">PMB</a>
+              <a href="https://daak.amikom.ac.id/index.php/main/agenda" class="text-white">Info Akademik</a>
+              <a href="https://keuangan.amikom.ac.id/index.php/main/agenda" class="text-white">Info Keuangan</a>
+              <a href="https://kemahasiswaan.amikom.ac.id/index.php/main/berita" class="text-white">Info Kemahasiswaan</a>
+              <a href="https://elearning.amikom.ac.id/" class="text-white">Elearning</a>
+              <a href="https://wisuda.amikom.ac.id/" class="text-white">Wisuda</a>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <h4 class="my-4 text-white">Newsletter</h4>
+            <form>
+              <div class="form-group">
+                <input class="form-control" type="search" placeholder="Example@gmail.com" aria-label="Search" />
+                <button class="btn btn-warning btn-newsletter" type="submit">Kirim</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footerCopyright">
+      <p class="text-white"><i class="far fa-copyright"></i> <a class="text-white text-decoration-none" href="pages/myteam.html">Kontrakan Gayeng</a></p>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
